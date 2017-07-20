@@ -71,7 +71,7 @@ public class FeedActivity extends AppCompatActivity implements OnFeedListener{
         task.execute("http://maxile.ddns.net:11111/wordpress/wp-json/wc/v2/products");
 
 
-       /* listItem.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listItem.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
@@ -84,7 +84,7 @@ public class FeedActivity extends AppCompatActivity implements OnFeedListener{
                 intent.putExtra("url", posts.get(position).thumbnail);
                 startActivity(intent);
             }
-        });  */
+        });
     }
 
 
