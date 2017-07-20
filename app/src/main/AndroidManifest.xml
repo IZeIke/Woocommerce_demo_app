@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jwplayer.opensourcedemo">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JWPlayerFragmentExample"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".JWPlayerViewExample"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <!-- TODO Set your license key -->
+        <meta-data
+            android:name="JW_LICENSE_KEY"
+            android:value="Y5iPPRrJDiX0FIIuGiNIO7yQSeYVMilSyTn/eg==" />
+
+        <activity android:name=".FeedActivity" />
+        <activity android:name=".ItemActivity"></activity>
+    </application>
+
+</manifest>
